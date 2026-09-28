@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yared Teweldebirhan Weldu — Aspiring AI Engineer</title>
+<meta name="description" content="Portfolio of Yared Teweldebirhan Weldu — Aspiring AI Engineer building AI and IoT solutions for real problems.">
+<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=Jost:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+<div class="scroll-progress" aria-hidden="true"><span id="scrollProgressBar"></span></div>
+
+<!-- NAVBAR -->
+<header class="navbar" id="navbar">
+  <a href="#home" class="brand">Yared<span class="brand-dot">.</span></a>
+  <nav class="nav-links" id="navLinks">
+    <a href="#about" data-section="about">About</a>
+    <a href="#skills" data-section="skills">Skills</a>
+    <a href="#projects" data-section="projects">Projects</a>
+    <a href="#experience" data-section="experience">Experience</a>
+    <a href="#training" data-section="training">Training</a>
+    <a href="#achievements" data-section="achievements">Achievements</a>
+    <a href="#certificates" data-section="certificates">Certificates</a>
+    <a href="#contact" data-section="contact" class="nav-cta">Contact</a>
+  </nav>
+  <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- THREAD NAV -->
+<nav class="thread-nav" id="threadNav" aria-label="Section progress">
+  <svg class="thread-line" width="2" height="100%" preserveAspectRatio="none" aria-hidden="true">
+    <line x1="1" y1="0" x2="1" y2="100%" class="thread-track"/>
+    <line x1="1" y1="0" x2="1" y2="0" class="thread-fill" id="threadFill"/>
+  </svg>
+  <ul id="threadNodes">
+    <li data-section="home"><button aria-label="Go to Home"><span class="node-dot"></span><span class="node-label">Hero</span></button></li>
+    <li data-section="about"><button aria-label="Go to About"><span class="node-dot"></span><span class="node-label">About</span></button></li>
+    <li data-section="skills"><button aria-label="Go to Skills"><span class="node-dot"></span><span class="node-label">Skills</span></button></li>
+    <li data-section="projects"><button aria-label="Go to Projects"><span class="node-dot"></span><span class="node-label">Projects</span></button></li>
+    <li data-section="experience"><button aria-label="Go to Experience"><span class="node-dot"></span><span class="node-label">Experience</span></button></li>
+    <li data-section="training"><button aria-label="Go to Summer Training"><span class="node-dot"></span><span class="node-label">Training</span></button></li>
+    <li data-section="achievements"><button aria-label="Go to Achievements"><span class="node-dot"></span><span class="node-label">Achievements</span></button></li>
+    <li data-section="certificates"><button aria-label="Go to Certificates"><span class="node-dot"></span><span class="node-label">Certificates</span></button></li>
+    <li data-section="contact"><button aria-label="Go to Contact"><span class="node-dot"></span><span class="node-label">Contact</span></button></li>
+  </ul>
+</nav>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="section hero">
+    <div class="section-bg img-slot" data-src="assets/images/hero.jpg"></div>
+    <div class="section-overlay hero-overlay"></div>
+    <div class="sparkle sparkle-1" aria-hidden="true">✦</div>
+    <div class="sparkle sparkle-2" aria-hidden="true">✦</div>
+    <div class="sparkle sparkle-3" aria-hidden="true">✧</div>
+
+    <div class="container hero-content">
+      <p class="eyebrow reveal">— Portfolio</p>
+      <h1 class="hero-name reveal">
+        <span class="line">Hey, I'm</span>
+        <span class="line hero-name-main">Yared Teweldebirhan Weldu<span class="accent-dot">.</span></span>
+      </h1>
+      <p class="hero-tagline reveal"><span class="typed" id="typedText"></span><span class="typed-cursor">|</span></p>
+      <p class="hero-pitch reveal">
+        I build AI and IoT solutions for real problems, from crop and poultry disease
+        detection to working prototypes that run on a phone or a robot.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        <a href="assets/cv/Yared_Weldu_Europass_CV.pdf" download class="btn btn-text">Download CV ↓</a>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-cue" aria-label="Scroll to About">
+      <span class="scroll-cue-line"></span><span>Scroll</span>
+    </a>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section about">
+    <div class="section-bg img-slot" data-src="assets/images/about-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <div class="about-photo-frame img-slot" data-src="assets/images/profile.jpg" data-label="Your portrait photo"></div>
+        <div class="about-photo-caption">
+          <span class="caption-eyebrow">Currently exploring</span>
+          <span class="caption-main">AI &amp; IoT for real problems</span>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <p class="eyebrow reveal">— About Me</p>
+        <h2 class="section-title reveal">Building AI that solves real problems</h2>
+        <p class="about-bio reveal">
+          I'm an aspiring AI engineer with strong Python and machine learning skills, focused on
+          AI and IoT solutions for real problems. I led Hiwet AI, a student project selected as a
+          finalist for the Zayed Sustainability Prize that secured a $25,000 grant for the school,
+          and I represented Ethiopia at the award ceremony in Abu Dhabi.
+        </p>
+        <p class="about-bio reveal">
+          I'm experienced in leadership, teaching, and turning AI models into working prototypes —
+          from the mobile app front end and back end to the database.
+        </p>
+        <div class="about-focus-tags reveal">
+          <span class="tag">AI / Machine Learning</span>
+          <span class="tag">IoT &amp; Robotics</span>
+          <span class="tag">Team Leadership</span>
+          <span class="tag">Teaching</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section skills">
+    <div class="section-bg img-slot" data-src="assets/images/skills-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— Toolkit</p>
+      <h2 class="section-title reveal center">Skills &amp; Tools</h2>
+      <p class="section-lede reveal center">
+        The tools I use to take an idea from a trained model to a working device or app.
+      </p>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>AI &amp; Machine Learning</h3>
+          <ul class="skill-pills">
+            <li>Python</li><li>TensorFlow</li><li>Keras</li><li>CNN</li><li>MobileNet</li><li>ONNX</li><li>NLP (Transformers)</li><li>Google Colab</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>Mobile &amp; App Development</h3>
+          <ul class="skill-pills">
+            <li>Android Studio</li><li>Android Apps</li><li>Front End</li><li>Back End</li><li>Database</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>Microcontrollers &amp; IoT</h3>
+          <ul class="skill-pills">
+            <li>Arduino Uno</li><li>ESP32</li><li>DC Motors</li><li>Prototype Robotics</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>Leadership &amp; Communication</h3>
+          <ul class="skill-pills">
+            <li>Team Leadership</li><li>Teaching &amp; Tutoring</li><li>Presenting in National &amp; International Events</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>Languages</h3>
+          <ul class="skill-pills">
+            <li>Tigrigna (mother tongue)</li><li>Amharic</li><li>English</li><li>Arabic</li>
+          </ul>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-card-glow"></div>
+          <h3>Other Skills &amp; Interests</h3>
+          <ul class="skill-pills">
+            <li>Speed Typing</li><li>Swimming</li><li>Cycling &amp; Motorbike</li><li>Reading</li><li>Football</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section projects">
+    <div class="section-bg img-slot" data-src="assets/images/projects-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— Selected Work</p>
+      <h2 class="section-title reveal center">Projects</h2>
+      <p class="section-lede reveal center">
+        Two projects that show how I lead a team and how I build a prototype end to end.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card featured reveal">
+          <div class="project-image img-slot" data-src="assets/images/project1.jpg" data-label="Hiwet AI project image"></div>
+          <div class="project-body">
+            <span class="project-flag">Team Leader · 2024/2025</span>
+            <h3>Hiwet AI — Disease Detection for Indigenous Crops</h3>
+            <p>An AI mobile app that detects diseases in teff, sorghum, barley and cactus pear from a photo, working offline and with Tigrigna support. I planned a CNN built from scratch with TensorFlow, Keras and Google Colab, trained on real local images, and a school committee to train 100+ students. The project was a Zayed Sustainability Prize finalist and secured a USD 25,000 grant, and we presented at the award ceremony in Abu Dhabi, UAE.</p>
+            <ul class="tech-stack">
+              <li>CNN</li><li>TensorFlow</li><li>Keras</li><li>Google Colab</li><li>Mobile App</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="project-card featured reveal">
+          <div class="project-image img-slot" data-src="assets/images/project2.jpg" data-label="Poultry system image"></div>
+          <div class="project-body">
+            <span class="project-flag">Developer · 2025/2026</span>
+            <h3>Hiwet Smart Poultry Management System</h3>
+            <p>A prototype robot and Android app that detect poultry diseases such as Newcastle disease and coccidiosis from images and recommend actions. I trained a MobileNet-based model and exported it to ONNX for on-device use in an Android Studio app with Amharic and English support. The robot uses an Arduino Uno, an ESP32 Wi-Fi module and DC motors, streams a live camera feed, and monitors temperature and humidity to control a fan and lamps.</p>
+            <ul class="tech-stack">
+              <li>MobileNet</li><li>ONNX</li><li>Android Studio</li><li>Arduino Uno</li><li>ESP32</li><li>IoT</li>
+            </ul>
+          </div>
+        </article>
+      </div>
+
+      <div class="gallery-grid reveal">
+        <div class="img-slot" data-src="assets/images/gallery1.jpg" data-label="Project photo 1"></div>
+        <div class="img-slot" data-src="assets/images/gallery2.jpg" data-label="Project photo 2"></div>
+        <div class="img-slot" data-src="assets/images/gallery3.jpg" data-label="Project photo 3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section experience">
+    <div class="section-bg img-slot" data-src="assets/images/about-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— The Journey So Far</p>
+      <h2 class="section-title reveal center">Experience &amp; Education</h2>
+
+      <ol class="timeline">
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2025 / 2026</span>
+            <h3>Active Member — Kallamino STEM Center</h3>
+            <p>Kallamino Special High School, Ethiopia. Contributed to several significant STEM projects during the academic year.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">July — August 2025</span>
+            <h3>Volunteer Tutor</h3>
+            <p>Voluntary Summer Tutorial Program, Tigray Development Association with the Tigray Regional Education Bureau. Tutored students in Grades 8 to 12 and received a Certificate of Recognition for active participation, dedication and volunteerism.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 / 2025</span>
+            <h3>Sport Club Co-founder &amp; President · Art Club Member</h3>
+            <p>Kallamino Special High School, Ethiopia. Active, voluntary participation in the Sport Club and valued contributions to artistic projects in the Art Club.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">2024 — 2026</span>
+            <h3>High School</h3>
+            <p>Kallamino Special High School, Tigray, Ethiopia · Fitawerary Abayeneh General Secondary School, Addis Ababa, Ethiopia.</p>
+          </div>
+        </li>
+        <li class="timeline-item reveal">
+          <div class="timeline-marker"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">May 2025</span>
+            <h3>Android Developer Fundamentals Nanodegree</h3>
+            <p>Udacity · Verified certificate.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- SUMMER TRAINING -->
+  <section id="training" class="section certificates">
+    <div class="section-bg img-slot" data-src="assets/images/certificates-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— Learning Beyond the Classroom</p>
+      <h2 class="section-title reveal center">Summer Training</h2>
+      <p class="section-lede reveal center">Summer camps and training programs I've attended. Add an attendance photo to each image space.</p>
+
+      <div class="certs-grid">
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/training-insa.jpg" data-label="INSA Summer Camp attendance photo"></div>
+          <figcaption><h3>INSA Summer Camp</h3><p>Hands-on mobile and web app development with a focus on cybersecurity, building applications while learning to secure them. Trained alongside students selected from across Ethiopia, with a demanding daily schedule of technical challenges, sports, chess, and self-awareness sessions. Organized by the Ethiopian Information Network Security Agency (INSA) and AASTU.</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/training-eaii.jpg" data-label="Ethiopian Artificial Intelligence Institute camp attendance photo"></div>
+          <figcaption><h3>AI Summer Camp</h3><p>2026/07 – 2026/09</p>
+<p>Two-month AI camp focused on Python, machine learning, and deep learning, 9–10 hours daily. Fine-tuned a Transformer model (XLM-RoBERTa) for an NLP project, HuluSafe, classifying Amharic news as danger-implying or not. Built the UI (HTML, CSS, JavaScript) with peers on GitHub, backend with Python/FastAPI (deployed on Render), and database with PostgreSQL (deployed on Supabase).</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/training-egate.jpg" data-label="EGATE summer training attendance photo"></div>
+          <figcaption><h3>Summer Training</h3><p>2026/08 – 2026/09</p>
+            <p>One-month on-campus AI and machine learning camp, up to 15 hours daily. Expanded HuluSafe into Ethiopera, an AI-powered news app to solve Ethiopia's scattered and irrelevant news problem, by training a model to deliver relevant news to users. Project still in progress.</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACHIEVEMENTS -->
+  <section id="achievements" class="section achievements">
+    <div class="section-bg img-slot" data-src="assets/images/achievement-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— Recognition</p>
+      <h2 class="section-title reveal center">Awards &amp; Achievements</h2>
+      <p class="section-lede reveal center">National and international recognition for the work I've led and built.</p>
+
+      <div class="achievements-grid">
+        <article class="achievement-card featured reveal">
+          <div class="achievement-image img-slot" data-src="assets/images/award-zayed.jpg" data-label="Zayed Prize photo"></div>
+          <div class="achievement-body">
+            <span class="achievement-badge">International</span>
+            <span class="timeline-date">2024 / 2025</span>
+            <h3>Finalist — Zayed Sustainability Prize</h3>
+            <p>The Hiwet AI project earned a USD 25,000 grant for the school in this international competition, and I represented Ethiopia at the award ceremony in Abu Dhabi.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card reveal">
+          <div class="achievement-image img-slot" data-src="assets/images/award-science-fair.jpg" data-label="Science Fair photo"></div>
+          <div class="achievement-body">
+            <span class="achievement-badge">National</span>
+            <span class="timeline-date">November 2025</span>
+            <h3>3rd Place — Ethiopian National Science Fair</h3>
+            <p>Ministry of Education, held at Addis Ababa Science and Technology University, among STEM centers across the nation.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card reveal">
+          <div class="achievement-image img-slot" data-src="assets/images/award-taik.jpg" data-label="TAIK AI Camp photo"></div>
+          <div class="achievement-body">
+            <span class="achievement-badge">Winner</span>
+            <span class="timeline-date">August 2025</span>
+            <h3>Capstone Project Winner — TAIK AI Camp 2025</h3>
+            <p>The Africa I Know. Developed an AI project addressing an African challenge.</p>
+          </div>
+        </article>
+
+        <article class="achievement-card reveal">
+          <div class="achievement-image img-slot" data-src="assets/images/award-innovation-week.jpg" data-label="Innovation Week photo"></div>
+          <div class="achievement-body">
+            <span class="achievement-badge">Participant</span>
+            <span class="timeline-date">12 — 14 November 2025</span>
+            <h3>Ethio–Israel Innovation Week</h3>
+            <p>Hosted at AASTU by the Ministry of Innovation and Technology, the Israel Embassy, STEMpower and Unistream.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES -->
+  <section id="certificates" class="section certificates">
+    <div class="section-bg img-slot" data-src="assets/images/certificates-bg.jpg"></div>
+    <div class="section-overlay"></div>
+
+    <div class="container">
+      <p class="eyebrow reveal center">— Proof of Work</p>
+      <h2 class="section-title reveal center">Certificates</h2>
+      <p class="section-lede reveal center">Click a certificate to view it full size.</p>
+
+      <div class="certs-grid">
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert1.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>Certificate of Recognition</h3><p>Volunteer Tutor, Summer Tutorial Program — 2025</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert2.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>Android Developer Fundamentals</h3><p>Udacity Nanodegree — May 2025</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert3.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>TAIK AI Camp 2025</h3><p>Capstone Project Winner — August 2025</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert4.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>Ethiopian National Science Fair</h3><p>3rd place &amp; participation — November 2025</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert5.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>Zayed Sustainability Prize</h3><p>Finalist — 2024/2025</p></figcaption>
+        </figure>
+        <figure class="cert-card reveal">
+          <div class="img-slot" data-src="assets/images/cert6.jpg" data-label="Certificate image"></div>
+          <figcaption><h3>Ethio–Israel Innovation Week</h3><p>Participant — November 2025</p></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact">
+    <div class="section-bg img-slot" data-src="assets/images/contact-bg.jpg"></div>
+    <div class="section-overlay contact-overlay"></div>
+
+    <div class="container contact-grid">
+      <div class="contact-intro">
+        <p class="eyebrow reveal">— Let's Talk</p>
+        <h2 class="section-title reveal">Get In Touch</h2>
+        <p class="section-lede reveal left">
+          Have a project, an opportunity, or a question about my work? Send me a message.
+        </p>
+        <div class="contact-links reveal">
+          <a href="mailto:yartewelde1219@gmail.com" class="contact-link">
+            <img class="contact-icon" src="assets/images/icons/gmail.png" alt="">
+            <span class="contact-link-label">Email</span>
+            <span class="contact-link-value">yartewelde1219@gmail.com</span>
+          </a>
+          <a href="tel:+251933339290" class="contact-link">
+            <img class="contact-icon" src="assets/images/icons/dial.png" alt="">
+            <span class="contact-link-label">Phone</span>
+            <span class="contact-link-value">+251 933 339 290</span>
+          </a>
+          <a href="#home" class="contact-link">
+            <img class="contact-icon" src="assets/images/icons/ethiopia.png" alt="">
+            <span class="contact-link-label">Country</span>
+            <span class="contact-link-value">Ethiopia</span>
+          </a>
+          <a href="https://www.linkedin.com/in/yared-teweldebirhan-weldu-618586396/" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="assets/images/icons/linkedin.png" alt="">
+            <span class="contact-link-label">LinkedIn</span>
+            <span class="contact-link-value">View profile ↗</span>
+          </a>
+          <a href="https://github.com/yartewelde1219" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="assets/images/icons/github.png" alt="">
+            <span class="contact-link-label">GitHub</span>
+            <span class="contact-link-value">View profile ↗</span>
+          </a>
+          <a href="https://t.me/Jared962_7" class="contact-link" target="_blank" rel="noopener noreferrer">
+            <img class="contact-icon" src="assets/images/icons/telegram.png" alt="">
+            <span class="contact-link-label">Telegram</span>
+            <span class="contact-link-value">Message me ↗</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="reveal">
+        <div class="contact-photo img-slot" data-src="assets/images/contact-photo.jpg" data-label="Optional photo"></div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <p>Designed &amp; built with care · © <span id="year"></span> Yared Teweldebirhan Weldu</p>
+    </footer>
+  </section>
+
+</main>
+
+<div class="lightbox" id="lightbox" aria-hidden="true"><img alt="Enlarged view"></div>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
