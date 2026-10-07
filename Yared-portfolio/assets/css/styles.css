@@ -1195,3 +1195,8 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
   .section:not(.hero) .site-footer{ width: calc(100% - 44px); }
 }
+
+.gallery-item { margin: 0; }
+.gallery-item figcaption { padding: 0.75rem 0.25rem; }
+.gallery-item h3 { margin: 0 0 0.35rem; font-size: 1.05rem; }
+.gallery-item p { margin: 0; font-size: 0.9rem; line-height: 1.5; opacity: 0.85; }
